@@ -16,7 +16,7 @@ RUN echo "Installing dependencies"
 # Set the environment to production
 ENV NODE_ENV=production
 # Install dependencies
-RUN npm ci
+RUN npm install --production
 RUN echo "Building Addon"
 # Attempt to build the application, with output for debugging
 RUN npm run build
